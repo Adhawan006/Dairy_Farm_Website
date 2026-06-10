@@ -7,6 +7,7 @@ import Products from "./pages/Products";
 import MediaGallery from "./pages/MediaGallery";
 import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/gallery" element={<MediaGallery />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+    <Footer/>
     </BrowserRouter>
   );
 }
