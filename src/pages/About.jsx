@@ -1,5 +1,3 @@
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 import "./About.css";
 
 import poster from "../assets/poster.jpg";
@@ -11,7 +9,6 @@ import qualityReport from "../assets/quality-report.jpg";
 function About() {
   return (
     <>
-      <Navbar />
 
       <div
         style={{
@@ -165,7 +162,6 @@ function About() {
         </section>
       </div>
 
-      <Footer />
     </>
   );
 }
