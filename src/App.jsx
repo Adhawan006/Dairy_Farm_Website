@@ -6,10 +6,12 @@ import Farm from "./pages/Farm";
 import Products from "./pages/Products";
 import MediaGallery from "./pages/MediaGallery";
 import Contact from "./pages/Contact";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <BrowserRouter>
+    <Navbar/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
