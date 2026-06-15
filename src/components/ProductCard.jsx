@@ -1,5 +1,11 @@
-function ProductCard() {
-  return <div>Product Card</div>;
+function ProductCard({ name, description, image }) {
+  return (
+    <div className="product-card">
+      <img src={image} alt={name} />
+      <h3>{name}</h3>
+      <p>{description}</p>
+    </div>
+  );
 }
 
 export default ProductCard;
