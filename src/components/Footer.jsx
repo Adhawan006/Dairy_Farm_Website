@@ -5,18 +5,8 @@ const navLinks = [
   { label: "Home", path: "/" },
   { label: "About Us", path: "/about" },
   { label: "Our Farm", path: "/farm" },
-  { label: "Products", path: "/products" },
   { label: "Gallery", path: "/gallery" },
   { label: "Contact", path: "/contact" },
-];
-
-const products = [
-  "Full Cream Milk",
-  "Pure Desi Ghee",
-  "Homemade Paneer",
-  "Curd",
-  "Lassi",
-  "Butter"
 ];
 
 const contactInfo = [
@@ -36,15 +26,6 @@ const contactInfo = [
       </svg>
     ),
     text: "+91 8791395799",
-  },
-  {
-    icon: (
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-        <polyline points="22,6 12,13 2,6" />
-      </svg>
-    ),
-    text: "[email placeholder]",
   },
   {
     icon: (
@@ -70,7 +51,7 @@ function Footer() {
             <div className="footer__logo-name">Shree Shyam Dairy</div>
           </div>
           <p className="footer__desc">
-            Pure and natural dairy products, straight from our farm to your home. Trusted quality. Excellent taste.
+          Pure, fresh cow milk, straight from our farm to your home. With a focus on quality, hygiene, and freshness, we are proud to provide milk that families can enjoy and trust every day.
           </p>
         </div>
 
@@ -84,14 +65,6 @@ function Footer() {
               </Link>
             ))}
           </nav>
-        </div>
-
-        {/* Products */}
-        <div className="footer__col">
-          <h3 className="footer__heading">Our Products</h3>
-          {products.map((p) => (
-            <span key={p} className="footer__product-item">{p}</span>
-          ))}
         </div>
 
         {/* Contact */}

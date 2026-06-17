@@ -7,7 +7,7 @@
   --green-mid:     #3a9e63;
   --green-light:   #c8edd8;
   --green-pale:    #d6eede;
-  --text-dark:     #0f2a1c;
+  --text-dark:     #06402b;
   --text-mid:      #2e5c3e;
   --border:        #9ecdb0;
 }
@@ -148,7 +148,7 @@
   height: 72px;
 }
 
-/* ── Responsive ───────────────────────────── */
+/* Responsive */
 @media (max-width: 820px) {
   .navbar__links    { display: none; }
   .navbar__hamburger { display: flex; }
