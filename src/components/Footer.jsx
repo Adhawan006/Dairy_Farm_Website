@@ -34,7 +34,7 @@ const contactInfo = [
         <polyline points="12 6 12 12 16 14" />
       </svg>
     ),
-    text: "Mon–Sun: 6:00 AM – 8:00 PM",
+    text: "Mon–Sun: 7:00 AM – 8:00 PM",
   },
 ];
 
