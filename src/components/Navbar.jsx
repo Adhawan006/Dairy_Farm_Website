@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
+import dairyLogo from "../assets/dairy-logo.png";
 import "./Navbar.css";
 
 const navLinks = [
@@ -32,6 +33,7 @@ function Navbar() {
 
           {/* Logo */}
           <Link to="/" className="navbar__logo">
+            <img src={dairyLogo} alt="Shree Shyam Dairy Logo" className="navbar__logo-img" />
             <div className="navbar__logo-name">Shree Shyam Dairy</div>
           </Link>
 

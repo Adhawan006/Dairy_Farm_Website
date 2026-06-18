@@ -48,7 +48,15 @@
   text-decoration: none;
   display: flex;
   align-items: center;
+  gap: 10px;
   flex-shrink: 0;
+}
+
+.navbar__logo-img {
+  height: 44px;
+  width: 44px;
+  object-fit: contain;
+  display: block;
 }
 
 .navbar__logo-name {
