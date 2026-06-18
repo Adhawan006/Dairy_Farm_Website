@@ -1,9 +1,9 @@
 import "./About.css";
 
 import poster from "../assets/poster.jpg";
-import cowFeeding from "../assets/cow-feeding.jpg";
-import farm1 from "../assets/farm1.jpg";
-import farm2 from "../assets/farm2.jpg";
+import cowFeeding from "../assets/v1.jpg";
+import farm1 from "../assets/v2.jpg";
+import farm2 from "../assets/v3.png";
 import qualityReport from "../assets/quality-report.jpg";
 
 function About() {
