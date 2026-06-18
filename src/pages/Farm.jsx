@@ -4,6 +4,7 @@ import vid1 from "./images/vid1.mp4";
 import vid2 from "./images/vid2.mp4";
 import img1 from "./images/img1.jpeg";
 import img2 from "./images/img2.jpeg";
+import { Link } from "react-router-dom";
 
 const FARM_SECTIONS = [
   {
@@ -260,21 +261,23 @@ export default function Farm() {
         <p style={{ opacity: 0.88, marginBottom: 24, fontSize: 15 }}>
           We welcome farm visits every Sunday. See our processes, meet the cows, and taste the difference.
         </p>
-        <button style={{
-          background: "#fff",
-          color: "#1a4a1a",
-          border: "none",
-          borderRadius: 8,
-          padding: "14px 36px",
-          fontWeight: 700,
-          fontSize: 15,
-          cursor: "pointer",
-          display: "inline-flex",
-          alignItems: "center",
-          gap: 8,
-        }}>
-          📞 Contact Us Today
-        </button>
+        <Link
+  to="/contact"
+  style={{
+    background: "#fff",
+    color: "#1a4a1a",
+    borderRadius: 8,
+    padding: "14px 36px",
+    fontWeight: 700,
+    fontSize: 15,
+    textDecoration: "none",
+    display: "inline-flex",
+    alignItems: "center",
+    gap: 8,
+  }}
+>
+  📞 Contact Us Today
+</Link>
       </section>
 
       {/* ── Lightbox  */}
