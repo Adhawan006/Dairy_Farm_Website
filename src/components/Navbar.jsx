@@ -6,7 +6,6 @@ const navLinks = [
   { label: "Home", path: "/" },
   { label: "About", path: "/about" },
   { label: "Our Farm", path: "/farm" },
-  { label: "Products", path: "/products" },
   { label: "Gallery", path: "/gallery" },
   { label: "Contact", path: "/contact" },
 ];
