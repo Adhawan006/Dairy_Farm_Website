@@ -2,7 +2,7 @@ function Contact() {
   const contactDetails = [
     {
       title: "Call Us",
-      detail: "+91 98765 43210",
+      detail: "+91 8791395799",
       description: "Speak with our dairy team for orders and delivery details.",
     },
     {
@@ -12,7 +12,7 @@ function Contact() {
     },
     {
       title: "Visit Farm",
-      detail: "Green Valley Dairy Farm",
+      detail: "Shree Shyam Dairy",
       description: "Come by for fresh dairy products and farm assistance.",
     },
   ];
