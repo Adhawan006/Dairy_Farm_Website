@@ -5,7 +5,6 @@ import vid2 from "./images/vid2.mp4";
 import img1 from "./images/img1.jpeg";
 import img2 from "./images/img2.jpeg";
 
-// ── Placeholder image URLs (replace with real farm photos) ──────────────────
 const FARM_SECTIONS = [
   {
     id: 1,
@@ -95,7 +94,6 @@ const FARM_SECTIONS = [
 
 const CATEGORIES = ["All", "Cattle", "Pastures", "Milking", "Feed", "Processing", "Infrastructure"];
 
-// ── Stats bar data ────────────────────────────────────────────────────────────
 const STATS = [
   { value: "10+", label: "Acres of Land" },
   { value: "50+", label: "Healthy Cows" },
@@ -107,14 +105,18 @@ export default function Farm() {
   const [activeCategory, setActiveCategory] = useState("All");
   const [lightbox, setLightbox] = useState(null); // { type, src/videoId, title, description }
 
-  const filtered =
-    activeCategory === "All"
-      ? FARM_SECTIONS
-      : FARM_SECTIONS.filter((item) => item.category === activeCategory);
+ const filtered =
+  activeCategory === "All"
+    ? FARM_SECTIONS.filter(
+        (item) =>
+          item.type === "video" ||
+          item.category === "Feed"
+      )
+    : FARM_SECTIONS.filter((item) => item.category === activeCategory);
 
   return (
     <div style={{ fontFamily: "'Segoe UI', sans-serif", color: "#1a1a1a", background: "#fff" }}>
-      {/* ── Hero Banner ──────────────────────────────────────────────────────── */}
+      {/* ── Hero Banner  */}
       <section
         style={{
           background: "linear-gradient(135deg, #8e9e8e 0%, #78e078 50%, #3a9a3a 100%)",
@@ -166,7 +168,7 @@ export default function Farm() {
         </div>
       </section>
 
-      {/* ── Main Content ─────────────────────────────────────────────────────── */}
+      {/* ── Main Content  */}
       <section style={{ maxWidth: 1200, margin: "0 auto", padding: "56px 20px 80px" }}>
 
         {/* section header */}
@@ -216,7 +218,7 @@ export default function Farm() {
         </div>
       </section>
 
-      {/* ── Farm Story Section ───────────────────────────────────────────────── */}
+      {/* ── Farm Story Section  */}
       <section style={{
         background: "linear-gradient(135deg, #f0f9f0 0%, #e8f5e8 100%)",
         padding: "60px 20px",
@@ -245,7 +247,7 @@ export default function Farm() {
         </div>
       </section>
 
-      {/* ── CTA Banner ──────────────────────────────────────────────────────── */}
+      {/* ── CTA Banner  */}
       <section style={{
         background: "linear-gradient(135deg, #1a4a1a, #2d7a2d)",
         color: "#fff",
@@ -275,7 +277,7 @@ export default function Farm() {
         </button>
       </section>
 
-      {/* ── Lightbox ────────────────────────────────────────────────────────── */}
+      {/* ── Lightbox  */}
       {lightbox && (
         <Lightbox item={lightbox} onClose={() => setLightbox(null)} />
       )}
@@ -283,7 +285,7 @@ export default function Farm() {
   );
 }
 
-/* ── Gallery Card Component ─────────────────────────────────────────────────── */
+/* ── Gallery Card Component  */
 function GalleryCard({ item, onClick }) {
   const [hovered, setHovered] = useState(false);
 
@@ -392,7 +394,7 @@ function GalleryCard({ item, onClick }) {
   );
 }
 
-/* ── Lightbox Component ──────────────────────────────────────────────────────── */
+/* ── Lightbox Component  */
 function Lightbox({ item, onClose }) {
   return (
     <div
