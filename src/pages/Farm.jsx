@@ -4,6 +4,7 @@ import vid1 from "./images/vid1.mp4";
 import vid2 from "./images/vid2.mp4";
 import img1 from "./images/img1.jpeg";
 import img2 from "./images/img2.jpeg";
+import img3 from "./images/img3.jpeg";
 import { Link } from "react-router-dom";
 
 const FARM_SECTIONS = [
@@ -40,14 +41,14 @@ const FARM_SECTIONS = [
 
   },
   {
-    id: 4,
-    type: "image",
-    category: "Feed",
-    src: "src/pages/images/img3.jpeg",
-    thumb: "src/pages/images/img3.jpeg",
-    title: "Nutritious Feed",
-    description:
-      "We grow our own silage, green fodder, and dry roughage right on the farm. Each cow's diet is formulated by an expert nutritionist to ensure optimum health and maximum milk yield without any artificial hormones.",
+id: 4,
+type: "image",
+category: "Feed",
+src: img3,
+thumb: img3,
+title: "Nutritious Feed",
+description:
+  "We grow our own silage, green fodder, and dry roughage right on the farm. Each cow's diet is formulated by an expert nutritionist to ensure optimum health and maximum milk yield without any artificial hormones.",
   },
   {
     id: 5,
