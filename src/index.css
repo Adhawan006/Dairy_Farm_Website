@@ -153,6 +153,13 @@ body {
   margin-top: 70px;
 }
 
+.quality-btn,
+.quality-btn:visited,
+.quality-btn:hover,
+.quality-btn:active {
+  text-decoration: none;
+}
+
 /* Responsive */
 
 @media (max-width: 768px) {
