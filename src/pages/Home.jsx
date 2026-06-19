@@ -180,11 +180,12 @@
 
 function Home() {
   const products = [
-    { id: 1, name: "Fresh Milk", icon: "🥛" },
-    // { id: 2, name: "Pure Butter", icon: "🧈" },
-    // { id: 3, name: "Paneer", icon: "🧀" },
-    // { id: 4, name: "Curd", icon: "🥣" },
-    // { id: 5, name: "Desi Ghee", icon: "✨" },
+    {
+      id: 1,
+      name: "Fresh Milk",
+      image:
+        "https://plus.unsplash.com/premium_photo-1694481100261-ab16523c4093?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bWlsa3xlbnwwfHwwfHx8MA%3D%3D",
+    },
   ];
 
   const features = [
@@ -194,6 +195,7 @@ function Home() {
     "Rich in Nutrition",
     "Direct Farm Delivery",
   ];
+
 
   return (
     <div
@@ -262,14 +264,28 @@ function Home() {
               key={product.id}
               style={{
                 backgroundColor: "#fff",
-                borderRadius: "12px",
-                padding: "20px",
-                minWidth: "170px",
+                borderRadius: "16px",
+                padding: "30px",
+                width: "320px",
                 textAlign: "center",
-                boxShadow: "0 4px 10px rgba(0,0,0,0.1)",
+                boxShadow: "0 6px 15px rgba(0,0,0,0.15)",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
               }}
             >
-              <h3 style={{ fontSize: "22px" }}>{product.icon}</h3>
+              {/* <h3 style={{ fontSize: "22px" }}>{product.icon}</h3> */}
+
+              <img
+                src={product.image}
+                alt={product.name}
+                style={{
+                  width: "230px",
+                  height: "230px",
+                  objectFit: "cover",
+                  borderRadius: "10px",
+                }}
+              />
 
               <p
                 style={{
