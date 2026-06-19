@@ -42,10 +42,10 @@ function Contact() {
         </ul>
 
         <a
-         href="https://wa.me/91879139579"
-         target="_blank"
-         rel="noopener noreferrer"
-        className="quality-btn"
+  href="https://wa.me/918791395799"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="quality-btn"
 >
   Send Message
 </a>
