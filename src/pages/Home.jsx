@@ -181,10 +181,10 @@
 function Home() {
   const products = [
     { id: 1, name: "Fresh Milk", icon: "🥛" },
-    { id: 2, name: "Pure Butter", icon: "🧈" },
-    { id: 3, name: "Paneer", icon: "🧀" },
-    { id: 4, name: "Curd", icon: "🥣" },
-    { id: 5, name: "Desi Ghee", icon: "✨" },
+    // { id: 2, name: "Pure Butter", icon: "🧈" },
+    // { id: 3, name: "Paneer", icon: "🧀" },
+    // { id: 4, name: "Curd", icon: "🥣" },
+    // { id: 5, name: "Desi Ghee", icon: "✨" },
   ];
 
   const features = [
