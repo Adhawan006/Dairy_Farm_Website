@@ -41,7 +41,14 @@ function Contact() {
           <li>Bulk orders available for events and stores</li>
         </ul>
 
-        <button className="quality-btn">Send Message</button>
+        <a
+         href="https://wa.me/91879139579"
+         target="_blank"
+         rel="noopener noreferrer"
+        className="quality-btn"
+>
+  Send Message
+</a>
       </div>
     </div>
   );
